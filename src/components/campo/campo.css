@@ -1,0 +1,37 @@
+.campo{
+    background-color:var(--gray);
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+    margin-left: 5%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.campo-item{
+    background-color: var(--white);
+    text-align: center;
+    width: 90%;
+    margin:auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.contendor{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    position: relative;
+}
+
+.item-right{
+    grid-column-start: 2;
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    
+}
+.deck-cards{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,7 @@
+.header-container{
+    height: 15%;
+    width: 100%;
+    color:var(--white);
+    background-color: var(--black);
+    text-align: center;;
+}

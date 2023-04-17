@@ -4,7 +4,6 @@ import {Selecion} from "../components/Selecion";
 import {Modal} from "../components/modal";
 import { Campo } from "../components/campo";
 import { Header } from "../components/header";
-import { Cards } from "../components/cards";
 
 function AppUI() {
   const {

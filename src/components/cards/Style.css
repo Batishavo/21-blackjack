@@ -1,3 +1,9 @@
 .myCard{
     height: 50px;
 }
+.conten-card{
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+

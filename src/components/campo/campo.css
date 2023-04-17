@@ -1,37 +1,52 @@
-.campo{
-    background-color:var(--gray);
-    width: 90%;
-    height: 80%;
-    border-radius: 10px;
-    margin-left: 5%;
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
+.campo {
+  background-color: var(--gray);
+  width: 90%;
+  height: 83%;
+  border-radius: 10px;
+  margin-left: 5%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.campo-item{
-    background-color: var(--white);
-    text-align: center;
-    width: 90%;
-    margin:auto;
-    border-radius: 10px;
-    margin-top: 10px;
+.campo-item {
+  background-color: var(--white);
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: 70px;
 }
-.contendor{
-    display: grid;
-    grid-template-columns: 20% 80%;
-    position: relative;
+.contendor {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  position: relative;
 }
 
-.item-right{
-    grid-column-start: 2;
-    position: absolute;
-    left: 0;
-    display: flex;
-    align-items: center;
-    
+.item-right {
+  grid-column-start: 2;
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
 }
-.deck-cards{
-    display: flex;
-    flex-direction: column;
+.deck-cards {
+  display: flex;
+  flex-direction: column;
 }
+.item-left p:nth-child(1) {
+  font-weight: bold;
+}
+
+.ask-card {
+  bottom: 10px;
+}
+
+.next-turn {
+  bottom: 10px;
+}
+.new-game {
+    bottom: 10px;
+    right: 10px;
+  }

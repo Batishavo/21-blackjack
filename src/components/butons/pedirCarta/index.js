@@ -1,8 +1,9 @@
 import React from "react";
+import Style from "./Style.css";
 
 const PedirCarta = ()=>{
     return (
-        <button>
+        <button className="ask-card">
             Pedir Carta
         </button>
     );

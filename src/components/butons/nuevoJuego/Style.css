@@ -1,5 +1,13 @@
 .new-game{
     position: absolute;
-    bottom: 10;
-    right: 5;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 10px;
+    margin: none;
+    background-color: var(--red);
+    color: white;
+    width: 150px;
+    height: 80px;
+    border: none;
+    font-weight: bold;
 }

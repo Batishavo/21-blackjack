@@ -27,9 +27,9 @@ function Campo({players}) {
     <div className="campo">
       {divs}
       <div className="action-butons">
-        <NuevoJuego className="new-game" />
-        <PedirCarta className="new-game" />
-        <PasarTurno className="new-game" />
+        <NuevoJuego />
+        <PedirCarta />
+        <PasarTurno />
       </div>
     </div>
   );

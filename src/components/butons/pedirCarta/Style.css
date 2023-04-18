@@ -1,10 +1,10 @@
-.next-turn{
+.ask-card{
     position: absolute;
     bottom: 10px;
-    left: 180px;
+    left: 5px;
     border-radius: 10px;
     margin: none;
-    background-color: var(--principal);
+    background-color: var(--secundario);
     color: white;
     width: 150px;
     height: 80px;

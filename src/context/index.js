@@ -3,7 +3,7 @@ import React from "react";
 const Context = React.createContext();
 
 function Provider(props) {
-    const [openModal,setOpenModal]=React.useState(false);
+    const [openModal,setOpenModal]=React.useState(3);
     const [players,setPlayers] = React.useState(7);
     return(
         <Context.Provider value={{

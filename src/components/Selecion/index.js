@@ -10,7 +10,7 @@ function Selecion({setOpenModal,setPlayers}){
     
     return (
 
-        <div className="containe-select">
+        <div className="container-select">
             <div className="select-players">
                 <h1>Seleciona el numero de jugadores</h1>
                 <ul>

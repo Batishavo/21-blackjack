@@ -1,0 +1,9 @@
+.box-winner{
+    position: relative;
+    
+}
+.winner{
+    background-color: red;
+    width: 500px;
+    height: 500px;
+}

@@ -7,26 +7,40 @@ import {Header} from "../components/header";
 import {Winner} from "../components/winnesr";
 
 function AppUI() {
-  const {openModal, setOpenModal, players, setPlayers} =
-    React.useContext(Context);
+  const 
+    {
+      openModal, 
+      setOpenModal, 
+      players, 
+      setPlayers,
+      posDeck,
+      setPosDeck
+    } = React.useContext(Context);
   return (
     <React.Fragment>
       <Header />
       {openModal === 2 && (
         <Modal>
-          <Selecion setOpenModal={setOpenModal} setPlayers={setPlayers} />
+          <Selecion 
+            setOpenModal={setOpenModal} 
+            setPlayers={setPlayers} 
+          />
         </Modal>
       )}
       {openModal === 3 && (
         <Modal>
           <Winner 
             className="winner"
-            player_winer={"1"} 
+            player_winer={"5"} 
           />
         </Modal>
       )}
       { openModal === 1 &&(
-        <Campo players={players} />
+        <Campo 
+          players={players} 
+          posDeck = {posDeck}
+          setPosDeck = {setPosDeck}
+        />
 
       )
 

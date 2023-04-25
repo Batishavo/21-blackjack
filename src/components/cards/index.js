@@ -6,13 +6,13 @@ const Cards = () => {
   return (
     <div className="conten-card">
       <div className="child-cards">
+        {/* <img className="myCard" src={red_back} alt="carta" />
         <img className="myCard" src={red_back} alt="carta" />
         <img className="myCard" src={red_back} alt="carta" />
         <img className="myCard" src={red_back} alt="carta" />
         <img className="myCard" src={red_back} alt="carta" />
         <img className="myCard" src={red_back} alt="carta" />
-        <img className="myCard" src={red_back} alt="carta" />
-        <img className="myCard" src={red_back} alt="carta" />
+        <img className="myCard" src={red_back} alt="carta" /> */}
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useEffect} from "react";
 import Style from "./Style.css";
 import {confetti} from "https://cdn.jsdelivr.net/npm/tsparticles-confetti/+esm";
 
@@ -38,10 +38,14 @@ const Winner = ({player_winer}) => {
   };
 
   //document.getElementById("run").addEventListener("click", run);
+  useEffect(() => {
+    run();
+  }, []);
+
   return (
     <div className="box-winner">
       <div className="winner">
-        <h1 onClick={run}>El ganador es el jugador {player_winer}</h1>
+        <h1 >El ganador es el jugador {player_winer}</h1>
       </div>
     </div>
   );

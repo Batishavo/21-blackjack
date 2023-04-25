@@ -2,8 +2,13 @@ import React from "react";
 import Style from "./Style.css";
 
 const PedirCarta = ()=>{
+    
+    const aksCard = ()=>{
+        //console.log("Pido una carta")
+    }
+
     return (
-        <button className="ask-card">
+        <button onClick={aksCard} className="ask-card">
             Pedir Carta
         </button>
     );

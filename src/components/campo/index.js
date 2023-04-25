@@ -6,10 +6,14 @@ import {PasarTurno} from "../butons/pasarTurno";
 import {PedirCarta} from "../butons/pedirCarta";
 
 function Campo({players}) {
+  
+  let turno = 1;
+
   const points = [0, 0, 0, 0, 0, 0, 0];
 
   const divs = Array.from({length: players}, (_, index) => (
-    <div key={index} className="campo-item">
+  
+  <div key={index} className="campo-item">
       <div className="contendor">
         <div className="item-left">
           <p>Jugador {index + 1}</p>
@@ -30,6 +34,7 @@ function Campo({players}) {
         <NuevoJuego />
         <PedirCarta />
         <PasarTurno />
+        <h2>Turno actual {turno}</h2>
       </div>
     </div>
   );

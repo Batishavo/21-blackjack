@@ -4,7 +4,7 @@ function Selecion({setOpenModal,setPlayers}){
     
     const cambio=(val)=>{
         console.log(val)
-        setOpenModal(prevState => !prevState);
+        setOpenModal(1);
         setPlayers(val);
     }
     

@@ -1,10 +1,10 @@
 import React from "react";
 import Style from "./Style.css";
 
-const PedirCarta = ()=>{
+const PedirCarta = ({posDeck,setPosDeck,deck})=>{
     
     const aksCard = ()=>{
-        //console.log("Pido una carta")
+        setPosDeck(posDeck+1);
     }
 
     return (

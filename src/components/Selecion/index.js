@@ -1,11 +1,17 @@
 import React from "react";
 import selecion from "./selecion.css"
-function Selecion({setOpenModal,setPlayers}){
+function Selecion({setOpenModal,setPlayers,setHandCars,handCards,deck,posDeck,setPosDeck}){
     
     const cambio=(val)=>{
-        console.log(val)
+        //console.log(val)
         setOpenModal(1);
         setPlayers(val);
+        for(let i=0;i<val;i++){
+            //console.log(deck[posDeck],posDeck)
+            setHandCars(handCards[i].push(deck[i]));
+        }
+        setPosDeck(val);
+        console.log(handCards[0])
     }
     
     return (

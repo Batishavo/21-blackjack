@@ -14,7 +14,10 @@ function AppUI() {
       players, 
       setPlayers,
       posDeck,
-      setPosDeck
+      setPosDeck,
+      deck,
+      handCards,
+      setHandCars
     } = React.useContext(Context);
   return (
     <React.Fragment>
@@ -24,6 +27,12 @@ function AppUI() {
           <Selecion 
             setOpenModal={setOpenModal} 
             setPlayers={setPlayers} 
+            posDeck = {posDeck}
+            setPosDeck = {setPosDeck}
+            deck = {deck}
+            handCards = {handCards}
+            setHandCars = {setHandCars}
+          
           />
         </Modal>
       )}
@@ -40,6 +49,9 @@ function AppUI() {
           players={players} 
           posDeck = {posDeck}
           setPosDeck = {setPosDeck}
+          deck = {deck}
+          handCards = {handCards}
+          setHandCars = {setHandCars}
         />
 
       )

@@ -4,14 +4,17 @@ function Selecion({setOpenModal,setPlayers,setHandCars,handCards,deck,posDeck,se
     
     const cambio=(val)=>{
         //console.log(val)
-        setOpenModal(1);
-        setPlayers(val);
-        for(let i=0;i<val;i++){
+        
+        for(let i=0;i<val*2;i+=2){
             //console.log(deck[posDeck],posDeck)
-            setHandCars(handCards[i].push(deck[i]));
+            handCards[i/2]=[deck[i],deck[i+1]];
+            //handCards[i].push(deck[i+1]);
         }
-        setPosDeck(val);
-        console.log(handCards[0])
+        setHandCars(handCards);
+        setPosDeck(val*2);
+        setPlayers(val);
+        setOpenModal(1);
+        //console.log(handCards[0])
     }
     
     return (

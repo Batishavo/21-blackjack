@@ -1,16 +1,15 @@
-import React , { useEffect } from "react";
+import React, {useEffect} from "react";
 import campo from "./campo.css";
 import {Cards} from "../cards";
 import {NuevoJuego} from "../butons/nuevoJuego";
 import {PasarTurno} from "../butons/pasarTurno";
 import {PedirCarta} from "../butons/pedirCarta";
 
-function Campo({players, posDeck, setPosDeck, deck,handCards,setHandCars}) {
-  console.log(handCards)
+function Campo({players, posDeck, setPosDeck, deck, handCards, setHandCars}) {
+  //console.log(handCards)
   let turno = 1;
 
   const points = [0, 0, 0, 0, 0, 0, 0];
-  
   const divs = Array.from({length: players}, (_, index) => (
     <div key={index} className="campo-item">
       <div className="contendor">
@@ -21,8 +20,9 @@ function Campo({players, posDeck, setPosDeck, deck,handCards,setHandCars}) {
         <div className="item-right">
           <div className="deck-cards">
             <Cards 
-              index = {index}
-              handCards = {handCards}
+              index={index} 
+              handCards={handCards} 
+         
             />
           </div>
         </div>

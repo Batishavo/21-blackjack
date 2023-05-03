@@ -1,5 +1,5 @@
 
-  const valueCards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "K", "Q", "A", "J"],
+  const valueCards = [2, 3, 4, 5, 6, 7, 8, 9, 10, "K", "Q", "A", "J"],
     typeCards = ["C", "D", "H", "S"];
 
     let deck = [];

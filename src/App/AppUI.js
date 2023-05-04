@@ -17,7 +17,9 @@ function AppUI() {
       setPosDeck,
       deck,
       handCards,
-      setHandCars
+      setHandCars,
+      points,
+      setPoints
     } = React.useContext(Context);
   return (
     <React.Fragment>
@@ -32,7 +34,8 @@ function AppUI() {
             deck = {deck}
             handCards = {handCards}
             setHandCars = {setHandCars}
-          
+            points = {points}
+            setPoints={setPoints}
           />
         </Modal>
       )}
@@ -52,6 +55,8 @@ function AppUI() {
           deck = {deck}
           handCards = {handCards}
           setHandCars = {setHandCars}
+          points = {points}
+          setPoints={setPoints}
         />
 
       )

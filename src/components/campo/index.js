@@ -5,11 +5,10 @@ import {NuevoJuego} from "../butons/nuevoJuego";
 import {PasarTurno} from "../butons/pasarTurno";
 import {PedirCarta} from "../butons/pedirCarta";
 
-function Campo({players, posDeck, setPosDeck, deck, handCards, setHandCars}) {
+function Campo({players, posDeck, setPosDeck, deck, handCards, points}) {
   //console.log(handCards)
   let turno = 1;
 
-  const points = [0, 0, 0, 0, 0, 0, 0];
   const divs = Array.from({length: players}, (_, index) => (
     <div key={index} className="campo-item">
       <div className="contendor">

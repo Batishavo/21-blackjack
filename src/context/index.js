@@ -9,6 +9,8 @@ function Provider(props) {
     const [posDeck,setPosDeck] = React.useState(0);
     const [handCards,setHandCars] 
         = React.useState([[], [], [], [], [], [], []]);
+    const [points,setPoints] = React.useState([0, 0, 0, 0, 0, 0, 0]);
+    const [turn,setTurn] = React.useState(1);
 
 
     return(
@@ -21,7 +23,11 @@ function Provider(props) {
             setPosDeck,
             deck,
             handCards,
-            setHandCars
+            setHandCars,
+            points,
+            setPoints,
+            turn,
+            setTurn,
         }}>
             {props.children}
         </Context.Provider>

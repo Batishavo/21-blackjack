@@ -19,7 +19,9 @@ function AppUI() {
       handCards,
       setHandCars,
       points,
-      setPoints
+      setPoints,
+      turn,
+      setTurn
     } = React.useContext(Context);
   return (
     <React.Fragment>
@@ -43,13 +45,14 @@ function AppUI() {
         <Modal>
           <Winner 
             className="winner"
-            player_winer={"5"} 
+            player_winer={turn} 
           />
         </Modal>
       )}
       { openModal === 1 &&(
         <Campo 
-          players={players} 
+          players={players}
+          setPlayers = {setPlayers}
           posDeck = {posDeck}
           setPosDeck = {setPosDeck}
           deck = {deck}
@@ -57,6 +60,9 @@ function AppUI() {
           setHandCars = {setHandCars}
           points = {points}
           setPoints={setPoints}
+          turn = {turn}
+          setTurn = {setTurn}
+          setOpenModal = {setOpenModal}
         />
 
       )

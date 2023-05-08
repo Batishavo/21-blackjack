@@ -10,7 +10,7 @@ function Provider(props) {
     const [handCards,setHandCars] 
         = React.useState([[], [], [], [], [], [], []]);
     const [points,setPoints] = React.useState([0, 0, 0, 0, 0, 0, 0]);
-    const [turn,setTurn] = React.useState(1);
+    const [turn,setTurn] = React.useState(0);
 
 
     return(

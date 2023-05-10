@@ -4,7 +4,7 @@ import deck from '../functions/giveCarts';
 const Context = React.createContext();
 
 function Provider(props) {
-    const [openModal,setOpenModal]=React.useState(2);
+    const [openModal,setOpenModal]=React.useState(4);
     const [players,setPlayers] = React.useState(7);
     const [posDeck,setPosDeck] = React.useState(0);
     const [handCards,setHandCars] 

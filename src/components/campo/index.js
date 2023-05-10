@@ -24,7 +24,12 @@ function Campo({
   const [actual, setActual] = React.useState(1);
 
   const divs = Array.from({length: players}, (_, index) => (
-    <div key={index} className={`campo-item ${turn === index ? 'actual' :''}`}>
+    <div 
+      key={index} 
+      className={
+        `campo-item ${turn === index ? 'actual ' :' '}
+        ${points[index]>21 ? 'lose' : ''}`
+      }>
       <div className="contendor">
         <div className="item-left">
           <p>Jugador {index + 1}</p>
@@ -67,7 +72,7 @@ function Campo({
               setOpenModal={setOpenModal}
               
             />
-            <PasarTurno />
+            {/* <PasarTurno /> */}
             <h2>Turno actual {turn + 1}</h2>
           </div>
         </div>

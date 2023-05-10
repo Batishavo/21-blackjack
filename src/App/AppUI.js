@@ -5,6 +5,7 @@ import {Modal} from "../components/modal";
 import {Campo} from "../components/campo";
 import {Header} from "../components/header";
 import {Winner} from "../components/winnesr";
+import { Lost } from "../components/lost";
 
 function AppUI() {
   const {
@@ -47,7 +48,7 @@ function AppUI() {
       )}
       {openModal === 1 && (
         <div>
-          
+
           <Campo
             players={players}
             setPlayers={setPlayers}
@@ -64,6 +65,11 @@ function AppUI() {
           />
         </div>
       )}
+      {
+        openModal === 4 && (
+          <Lost></Lost>
+        )
+      }
     </React.Fragment>
   );
 }

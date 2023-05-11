@@ -6,6 +6,7 @@ import {Campo} from "../components/campo";
 import {Header} from "../components/header";
 import {Winner} from "../components/winnesr";
 import { Lost } from "../components/lost";
+import { Footer } from "../components/footer";
 
 function AppUI() {
   const {
@@ -70,6 +71,7 @@ function AppUI() {
           <Lost></Lost>
         )
       }
+      <Footer></Footer>
     </React.Fragment>
   );
 }

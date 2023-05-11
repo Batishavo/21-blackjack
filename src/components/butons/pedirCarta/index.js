@@ -19,7 +19,7 @@ const PedirCarta = ({
     handCards[turn].push(deck[posDeck]);
     points[turn] += sum_Points(deck[posDeck]);
     if (points[turn] === 21) {
-      //setOpenModal(3);
+      setOpenModal(3);
     }
     setHandCars(handCards);
     setPosDeck(posDeck + 1);
@@ -28,6 +28,7 @@ const PedirCarta = ({
     aux = (aux + 1) % players;
     while (points[aux] > 21) {
       if (aux === turn) {
+        setOpenModal(4);
         break;
       }
       aux = (aux + 1) % players;

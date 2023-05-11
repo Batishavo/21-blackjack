@@ -1,8 +1,13 @@
-import React , {useEffect} from "react";
+import React, {useEffect} from "react";
 import Style from "./Style.css";
 import {confetti} from "https://cdn.jsdelivr.net/npm/tsparticles-confetti/+esm";
 
 const Winner = ({player_winer}) => {
+  const juego_Nuevo = () => {
+    window.location.reload(true);
+    //console.log("entro")
+  };
+
   const duration = 15 * 1000,
     animationEnd = Date.now() + duration,
     defaults = {startVelocity: 30, spread: 360, ticks: 60, zIndex: 0};
@@ -45,7 +50,10 @@ const Winner = ({player_winer}) => {
   return (
     <div className="box-winner">
       <div className="winner">
-        <h1 >El ganador es el jugador {player_winer}</h1>
+        <h1>El ganador es el jugador {player_winer}</h1>
+        <button class="button-box" onClick={juego_Nuevo}>
+          Juego nuevo
+        </button>
       </div>
     </div>
   );

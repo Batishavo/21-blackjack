@@ -40,7 +40,7 @@ function Selecion(
                 <h1>Seleciona el numero de jugadores</h1>
                 <ul>
                     {/* <li onClick={()=>cambio(1)}>1</li> */}
-                    <li onClick={()=>cambio(2)}>2</li>
+                    {/* <li onClick={()=>cambio(2)}>2</li> */}
                     <li onClick={()=>cambio(3)}>3</li>
                     <li onClick={()=>cambio(4)}>4</li>
                     <li onClick={()=>cambio(5)}>5</li>

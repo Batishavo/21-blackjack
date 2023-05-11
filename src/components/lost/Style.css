@@ -1,46 +1,16 @@
-:white {
-  color: #fcfcfc;
-}
-:gray {
-  color: #cbcdd3;
-}
-:dark {
-  color: #777777;
-}
-:error {
-  color: #ef8d9c;
-}
-:orange {
-  color: #ffc39e;
-}
-:success {
-  color: #b0db7d;
-}
-:secondary {
-  color: #99dbb4;
-}
-
 .container-aux{
-  display: grid;
-  min-height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-20%);
 }
-
-body {
-  display: grid;
-  overflow: hidden;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 #container {
   position: relative;
-  margin: auto;
   overflow: hidden;
   width: 700px;
   height: 250px;
 }
 
-h1 {
+.container-aux h1 {
   font-size: 0.9em;
   font-weight: 100;
   letter-spacing: 3px;
@@ -49,65 +19,10 @@ h1 {
   padding-bottom: 5px;
 }
 
-.red {
-  color: darken(#ef8d9c, 10%);
-}
-
-.alert {
-  font-weight: 700;
-  letter-spacing: 5px;
-}
-
-.container-aux p {
-  margin-top: -5px;
-  font-size: 0.5em;
-  font-weight: 100;
-  color: darken(#777777, 10%);
-  letter-spacing: 1px;
-}
-
-button,
-.dot {
-  cursor: pointer;
-}
-
-#success-box {
-  position: absolute;
-  width: 35%;
-  height: 100%;
-  left: 12%;
-  background: linear-gradient(to bottom right, #b0db7d 40%, #99dbb4 100%);
-  border-radius: 20px;
-  box-shadow: 5px 5px 20px rgba(203, 205, 211, 0.1);
-  perspective: 40px;
-}
-
 #error-box {
   position: absolute;
   width: 35%;
   height: 100%;
-  right: 12%;
-  background: linear-gradient(to bottom left, #ef8d9c 40%, #ffc39e 100%);
-  border-radius: 20px;
-  box-shadow: 5px 5px 20px rgba(203, 205, 211, 0.1);
-}
-
-.dot {
-  width: 8px;
-  height: 8px;
-  background: white;
-  border-radius: 50%;
-  position: absolute;
-  top: 4%;
-  right: 6%;
-}
-.dot:hover {
-  background: darken(#fcfcfc, 20%);
-}
-
-.two {
-  right: 12%;
-  opacity: 0.5;
 }
 
 .face2 {
@@ -118,7 +33,6 @@ button,
   border-radius: 50%;
   border: 1px solid #777777;
   top: 21%;
-  left: 37.5%;
   z-index: 2;
   animation: roll 3s ease-in-out infinite;
 }
@@ -182,10 +96,11 @@ button,
 }
 
 .button-box {
+  margin-top:30px;
   position: absolute;
   background: white;
   width: 50%;
-  height: 15%;
+  height: 30%;
   border-radius: 20px;
   top: 73%;
   left: 25%;
